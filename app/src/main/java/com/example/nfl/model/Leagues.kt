@@ -1,9 +1,9 @@
 package com.example.nfl.model
 
 data class Leagues(
-    var id:Int,
-    var uid: Int,
+    var id:String,
+    var uid: String,
     var name:String,
     var slug: String,
-    var teams: Teams
+    var teams: List<Teams>
 )

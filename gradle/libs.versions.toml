@@ -12,6 +12,8 @@ constraintlayout = "2.1.4"
 retrofitVersion = "2.9.0"
 converterGson = "2.5.0"
 room = "2.2.5"
+viewmodel = "2.2.0"
+guava = "27.0.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,6 +30,10 @@ room = {group = "androidx.room",name = "room-runtime",version.ref = "room"}
 room-compiler= {group = "androidx.room",name = "room-compiler",version.ref = "room"}
 room-ktx = {group = "androidx.room",name = "room-ktx",version.ref = "room"}
 room-testing= {group = "androidx.room",name = "room-testing",version.ref = "room"}
+viewmodel = {group="androidx.lifecycle",name = "lifecycle-viewmodel-ktx",version.ref = "viewmodel"}
+livedata = {group="androidx.lifecycle",name = "lifecycle-livedata-ktx",version.ref = "viewmodel"}
+guava = {group = "com.google.guava",name="guava",version="27.0.1-android"}
+
 
 
 [plugins]
