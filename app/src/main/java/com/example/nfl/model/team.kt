@@ -1,6 +1,12 @@
 package com.example.nfl.model
 
-data class team(   var id:String,
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "teams")
+data class team(
+    @PrimaryKey
+    var id:String,
                    var uid: String,
                    var name:String,
                    var slug: String,
