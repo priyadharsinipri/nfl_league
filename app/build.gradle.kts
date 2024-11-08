@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
@@ -49,10 +50,15 @@ dependencies {
     implementation(libs.livedata)
     implementation(libs.room)
     implementation(libs.room.ktx)
-    implementation(libs.room.compiler)
-    implementation(libs.room.testing)
+    annotationProcessor(libs.room.compiler)
+    kapt(libs.room.compiler)
+    androidTestImplementation(libs.room.testing)
     implementation(libs.guava)
     testImplementation(libs.junit)
+    implementation(libs.glide)
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 }

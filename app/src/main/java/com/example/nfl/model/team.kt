@@ -2,8 +2,9 @@ package com.example.nfl.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.TypeConverters
 
-@Entity(tableName = "teams")
+@Entity(tableName = "team")
 data class team(
     @PrimaryKey
     var id:String,

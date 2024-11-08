@@ -11,9 +11,11 @@ activity = "1.9.2"
 constraintlayout = "2.1.4"
 retrofitVersion = "2.9.0"
 converterGson = "2.5.0"
-room = "2.2.5"
+room = "2.6.1"
 viewmodel = "2.2.0"
 guava = "27.0.1"
+sqlite = "3.36.0"
+glideVersion = "4.12.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,11 +34,14 @@ room-ktx = {group = "androidx.room",name = "room-ktx",version.ref = "room"}
 room-testing= {group = "androidx.room",name = "room-testing",version.ref = "room"}
 viewmodel = {group="androidx.lifecycle",name = "lifecycle-viewmodel-ktx",version.ref = "viewmodel"}
 livedata = {group="androidx.lifecycle",name = "lifecycle-livedata-ktx",version.ref = "viewmodel"}
-guava = {group = "com.google.guava",name="guava",version="27.0.1-android"}
+guava = {group = "androidx.room",name="room-guava",version="room"}
+sqlite = { group =" arch.xerial",name="sqlite-jdbc",version="sqlite"}
+glide = { group = "com.github.bumptech.glide", name="glide",version.ref= "glideVersion"}
 
 
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = {id = "org.jetbrains.kotlin.kapt",version.ref = "kotlin"}
 
