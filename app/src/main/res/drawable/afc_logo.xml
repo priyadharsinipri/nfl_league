@@ -1,0 +1,25 @@
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- The big "A" shape -->
+    <path
+        android:fillColor="#E00000"
+        android:pathData="M50,180 L100,20 L150,180 L120,180 L100,100 L80,180 Z" />
+
+    <!-- Stars on the "A" -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,40 L115,55 L130,55 L118,65 L122,80 L110,70 L98,80 L102,65 L90,55 L105,55 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,70 L115,85 L130,85 L118,95 L122,110 L110,100 L98,110 L102,95 L90,85 L105,85 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,100 L115,115 L130,115 L118,125 L122,140 L110,130 L98,140 L102,125 L90,115 L105,115 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,130 L115,145 L130,145 L118,155 L122,170 L110,160 L98,170 L102,155 L90,145 L105,145 Z" />
+</vector>

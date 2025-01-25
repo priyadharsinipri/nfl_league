@@ -11,7 +11,16 @@ object RetrofitInstance {
                 addConverterFactory(GsonConverterFactory.create()).build()
     }
 
+    private val retrofitStandings by lazy {
+        Retrofit.Builder().baseUrl(Constants.STANDINGS_URL).
+        addConverterFactory(GsonConverterFactory.create()).build()
+    }
+    val standingsApi:StandingsApi by lazy {
+        retrofitStandings.create(StandingsApi::class.java)
+    }
+
     val api:TeamApi by lazy {
         retrofit.create(TeamApi::class.java)
     }
+
 }
