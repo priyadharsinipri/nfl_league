@@ -4,7 +4,7 @@ This project aims to display NFL standings of both AFC and NFC divisions in the 
 
 **API Details:**
 
-For this project,I have used Open source API from ESpn website 
+For this project,I have used Open source API from ESPN website 
 https://cdn.espn.com/core/nfl/standings?xhr=1
 
 **Technolgies used:**
